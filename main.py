@@ -42,3 +42,4 @@ for i , linha in enumerate(primeiras_linhas):
 
 sr = dados[0]["audio"]["sampling_rate"]
 dados = dados.cast_column("audio", Audio(sampling_rate=48000))
+
