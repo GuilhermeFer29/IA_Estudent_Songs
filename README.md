@@ -18,6 +18,7 @@ Make sure you have the following Python packages installed:
 - `soundfile`
 - `IPython`
 - `pathlib`
+- `pip install datasets transformers numpy matplotlib torch torchvision torchaudio librosa soundfile`
 
 You can install these packages using pip:
 
