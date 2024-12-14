@@ -27,7 +27,7 @@ model = 'openai/whisper-medium'
 
 # Realizando a transcrição
 
-speech_recognizer = pipeline('automatic-speech-recognition', model=model)
+speech_recognizer = pipeline('automatic-speech-recognition', model=model , generate_kwargs={'task': 'transcribe', 'language': 'portuguese'},                )
 
 # selecao de audio pelo indice
 
