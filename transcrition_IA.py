@@ -29,7 +29,18 @@ model = 'openai/whisper-medium'
 
 speech_recognizer = pipeline('automatic-speech-recognition', model=model)
 
+# selecao de audio pelo indice
+
+idx_soung = 7 # 0 a 10 
+
+soung = dades[idx_soung]['audio']
+
+print(speech_recognizer(soung))
+
+# display(IPython.display.Audio(data=soung['array'], rate=soung['sampling_rate']))
+
 # selecionando o audio
+'''
 speech_recognizer(dades[0]['audio'])
 
-print(speech_recognizer(dades[0]['audio']))
+print(speech_recognizer(dades[0]['audio']))'''
